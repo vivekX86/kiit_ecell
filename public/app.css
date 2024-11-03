@@ -1,0 +1,127 @@
+*{
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #001F3F;
+    background: -webkit-linear-gradient(to top, #393939, #001F3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #3b373f, #001F3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+nav{
+    background-color: #001F3F;
+    height: max-content;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    /* filter: blur(8px); */
+}
+
+.title{
+    position: relative;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    color: #FFDC7F;
+    z-index: 1;
+    margin: 5px;
+}
+
+#main{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: grid;    
+    justify-content: center;
+}
+
+#content_title, #content_subheading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    max-width: 600px;
+}
+
+#content_title{
+    background-color: transparent;
+    border-right: 1px solid #00ffea;
+    font-size: 50px;
+    padding: 2%;
+    text-align: center;
+}
+
+#content_subheading{
+    background-color: transparent;
+    border-left: 1px solid #00ffea;
+    width: 80%;
+    font-size: 30px;
+    padding: 2%;
+}
+
+#cta_btn{
+    min-height: 60px;
+    height: auto;
+    max-height: 100px;
+    width: auto;
+    max-width: max-content;
+    font-size: 25px;
+    /* padding: 2%; */
+    padding: 0px 20px;
+    margin: 5%;
+    color: #fff;
+    background-color: hsla(163, 100%, 37%, 0.5);
+    border: 1px solid transparent;
+    border-bottom: 1px solid #00ffea;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#cta_btn:hover{
+    background-color: hsla(163, 100%, 37%, 1);
+    border-bottom: 1px solid lime;
+}
+
+#linkSection{
+    background-color: #fff;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 4px;
+    gap: 10px;
+    margin: 5% 0% 0% 5%;
+}
+
+#linkSection svg{
+    height: 26px;
+    width: 26px;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 2px 2px 0px 2px;
+}
+
+.linkedIn{
+    fill: rgb(10 102 194);
+}
+
+.insta{
+    background: linear-gradient(
+        to right,
+        #833ab4,#fd1d1d,#fcb045
+    );
+}
+
+footer{
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
