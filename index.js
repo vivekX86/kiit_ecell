@@ -12,7 +12,7 @@ const jsonData = {
     headline: "Shape the Future with KIIT E-Cell",
     subText: "Join us at KIIT E-Cell and contribute to a culture of innovation and enterprenurship, there's a role for everyone.",
     ctaText: "Start Your Tech Journey!",
-    ctaLink: "example.com"
+    ctaLink: "https://kiit-ecell.onrender.com/"
 }
 
 app.get("/api/hero", (req, res)=>{
