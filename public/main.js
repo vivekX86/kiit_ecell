@@ -1,20 +1,25 @@
 // const url = "https://nodejs-serverless-function-express-liart-eight.vercel.app/api/hero";
 const url = "/api/hero";
+let errorOccured = false;
 
 async function loadJsonData(){
     try{
         const response = await fetch(url);
         if(!response.ok){
             const errMsg = ("Error: ", response.status, response.statusText);
+            errorHandeler();
+            errorOccured = true;
             throw new Error(errMsg);
-            errorOccured(errMsg);
         }
         const data = await response.json();
         handleJsonData(data);
     } catch (error){
         console.log(error);
-        errorOccured(error);
+        errorOccured = true;
+        errorHandeler();
     }
+
+    errorHandeler();
 }
 
 function handleJsonData(data){
@@ -31,9 +36,18 @@ function handleJsonData(data){
     })
 }
 
-function errorOccured(){
+function errorHandeler(){
     const error_ele = document.getElementById("error");
-    error_ele.style.display = "flex";
+    const loading_ele = document.getElementById("loading");
+
+    if(errorOccured){
+        error_ele.style.display = "flex";
+        loading_ele.style.display = "none";
+    }
+    if(!errorOccured){
+        loading_ele.style.display = "none";
+        error_ele.style.display = "none";
+    }
 }
 
 window.onload = loadJsonData();
