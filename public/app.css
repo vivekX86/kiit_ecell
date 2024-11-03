@@ -9,13 +9,14 @@ body{
     padding: 0px;
     height: 100vmax;
     box-sizing: border-box;
-    background-color: #001F3F;
-    background: -webkit-linear-gradient(to top, #393939, #001F3F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #3b373f, #001F3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #252b42;
+    background: -webkit-linear-gradient(to bottom, #252b42 40%, #38bcf5 150%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #252b42 40%, #38bcf5 150%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
 }
 
 nav{
-    background-color: #001F3F;
+    background-color: #252b42;
     height: max-content;
     width: 100%;
     display: inline-flex;
@@ -40,6 +41,7 @@ nav{
     height: auto;
     display: grid;    
     justify-content: center;
+    /* background: radial-gradient(circle at bottom, #001F3F 0%, rgba(255, 255, 255, 0) 75%) */
 }
 
 #content_title, #content_subheading{
@@ -52,7 +54,7 @@ nav{
 
 #content_title{
     background-color: transparent;
-    border-right: 1px solid #00ffea;
+    border-right: 1px solid #23a6f0;
     font-size: 50px;
     padding: 2%;
     text-align: center;
@@ -60,7 +62,7 @@ nav{
 
 #content_subheading{
     background-color: transparent;
-    border-left: 1px solid #00ffea;
+    border-left: 1px solid #23a6f0;
     width: 80%;
     font-size: 30px;
     padding: 2%;
@@ -71,33 +73,34 @@ nav{
     height: auto;
     max-height: 100px;
     width: auto;
-    max-width: max-content;
-    font-size: 25px;
-    padding: 0px 20px;
-    margin: 5%;
+    font-size: 22px;
+    margin: 5% 10%;
     color: #fff;
-    background-color: hsla(163, 100%, 37%, 0.5);
+    background-color: hsla(202, 87%, 54%, 0.1);
     border: 1px solid transparent;
-    border-bottom: 1px solid #00ffea;
+    border-bottom: 2px solid #23a6f0;
     border-radius: 5px 5px 0px 0px;
     cursor: pointer;
 }
 
 #cta_btn:hover{
-    background-color: hsla(163, 100%, 37%, 1);
-    border-bottom: 1px solid lime;
+    font-size: 24px;
+}
+
+#cta_btn:hover{
+    background-color: #23a6f0;
+    border-bottom: 2px solid transparent;
 }
 
 #linkSection{
     background-color: #fff;
-    width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
     padding: 4px;
     gap: 10px;
-    margin: 5% 0% 0% 5%;
+    margin: 0% 35%;
 }
 
 #linkSection svg{
