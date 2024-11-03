@@ -73,7 +73,6 @@ nav{
     width: auto;
     max-width: max-content;
     font-size: 25px;
-    /* padding: 2%; */
     padding: 0px 20px;
     margin: 5%;
     color: #fff;
@@ -81,6 +80,7 @@ nav{
     border: 1px solid transparent;
     border-bottom: 1px solid #00ffea;
     border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
 }
 
 #cta_btn:hover{
